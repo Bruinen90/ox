@@ -1,0 +1,90 @@
+body {
+     background-color: #222;
+     color: #888;
+}
+
+.App {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.main {
+    border: 1px solid #888;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+div.single {
+    padding: 0px;
+    border: 1px solid #888;
+    width: 198px;
+    height: 198px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.single:hover {
+    padding: 0px;
+    border: 5px solid #888;
+    width: 190px;
+    height: 190px;
+}
+
+.O {
+    background-color: #7c3e48;
+}
+
+.X {
+    background-color: #5d77a0;
+
+}
+
+.valueO {
+    border: 10px solid #ccc;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.valueX {
+  background: #ccc;
+  height: 120px;
+  position: relative;
+  width: 10px;
+  transform: rotate(45deg);
+}
+.valueX:after {
+  background: #ccc;
+  content: "";
+  height: 10px;
+  left: -55px;
+  position: absolute;
+  top: 55px;
+  width: 120px;
+}
+
+.button, .button:focus {
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #aaa;
+    background-color: #222;
+    outline: none;
+}
+
+.button:hover {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+}
